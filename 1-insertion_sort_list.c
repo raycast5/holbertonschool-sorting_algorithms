@@ -10,11 +10,11 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *next, *key;
 
-	if (!*list || !list || !(*list)->next)
+	if (!list)
 		return;
 
 	key = (*list)->next;
-	while (key)
+	while (key->next)
 	{
 		next = key->next;
 		while (key->prev && key->n < key->prev->n)

@@ -21,8 +21,6 @@ void shell_sort(int *array, size_t size)
 	}
 	while (inc > 0)
 	{
-		print_array(array, size);
-
 		for (outer = inc; outer < size; outer++)
 		{
 			temp = array[outer];
